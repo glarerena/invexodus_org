@@ -1,0 +1,678 @@
+<!DOCTYPE html><!--  Last Published: Tue Sep 24 2024 12:09:29 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="66be277dc89ae0bb7576bf86" data-wf-site="66be277cc89ae0bb7576be9e" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FlowUp Team - Webflow HTML website template</title>
+  <meta content="Explore new ways to manage your team and enjoy the hassle-free time management." name="description">
+  <meta content="FlowUp Team -  Webflow HTML website template" property="og:title">
+  <meta content="Explore new ways to manage your team and enjoy the hassle-free time management." property="og:description">
+  <meta content="https://uploads-ssl.webflow.com/663249e88f740b1eb4ae9a5a/66479a0c2185ebe0c620421c_og.png" property="og:image">
+  <meta content="FlowUp Team -  Webflow HTML website template" property="twitter:title">
+  <meta content="Explore new ways to manage your team and enjoy the hassle-free time management." property="twitter:description">
+  <meta content="https://uploads-ssl.webflow.com/663249e88f740b1eb4ae9a5a/66479a0c2185ebe0c620421c_og.png" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/invexodus.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Inter:regular,500,600","Sora:regular,500,600"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.jpg" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon"><!--  Please keep this css code to improve the font quality -->
+  <style>
+  * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+</style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+/* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+.div-square::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+/*Hide focus outline for main content element*/
+    main:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+/* Make sure containers never lose their center alignment*/
+.container-medium, .container-small, .container-large {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+/*Reset selects, buttons, and links styles*/
+.w-input, .w-select, a {
+color: inherit;
+text-decoration: inherit;
+font-size: inherit;
+}
+/*Apply "..." after 3 lines of text */
+.text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+/* Apply "..." at 100% width */
+.truncate-width { 
+		width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none; // Safari and Chrome
+}
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+@media screen and (max-width: 991px), 
+  @media screen and (max-width: 767px), 
+  @media screen and (max-width: 479px){
+    .hide, .hide-tablet{
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 767px)
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 479px)
+    .hide-mobile{
+      display: none !important;
+    }
+  }
+.margin-0 {
+  margin: 0rem !important;
+}
+.padding-0 {
+  padding: 0rem !important;
+}
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+</style>
+    </div>
+    <div data-animation="default" class="navbar_component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="cb586d45-c780-7d3c-8cfb-0ef259a07291" role="banner" data-duration="400">
+      <div class="w-layout-blockcontainer padding-global w-container">
+        <div class="navbar_container">
+          <a href="index.html" aria-current="page" class="navbar_logo-link w-nav-brand w--current"><img src="images/Screenshot-240.png" loading="lazy" alt="" class="navbar_logo"></a>
+          <nav role="navigation" class="navbar_menu w-nav-menu">
+            <div class="navbar_menu-left">
+              <a href="index.html" aria-current="page" class="navbar_link w-nav-link w--current">Home</a>
+              <a href="about.html" class="navbar_link w-nav-link">About</a>
+              <a href="programs.html" class="navbar_link w-nav-link">Programs</a>
+              <a href="partnerships.html" class="navbar_link w-nav-link">Partnerships</a>
+              <a href="contact-us.html" class="navbar_link w-nav-link">Contact Us</a>
+            </div>
+            <div class="navbar_menu-right">
+              <a href="index.html" aria-current="page" class="button-icon w-inline-block w--current">
+                <div class="icon-user_embed w-embed">
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" height="100%" viewbox="0 0 16 16">
+                    <defs>
+                      <style>
+      .cls-1 {
+        fill: currentcolor;
+        stroke-width: 0px;
+      }
+    </style>
+                    </defs>
+                    <path class="cls-1" d="m8,7.44c1.65,0,3-1.35,3-3s-1.35-3-3-3-3,1.35-3,3,1.35,3,3,3Zm0-5c1.1,0,2,.9,2,2s-.9,2-2,2-2-.9-2-2,.9-2,2-2Z"></path>
+                    <path class="cls-1" d="m8,8.06c-3.31,0-6,2.69-6,6h1c0-2.76,2.24-5,5-5s5,2.24,5,5h1c0-3.31-2.69-6-6-6Z"></path>
+                  </svg>
+                </div>
+              </a>
+              <a href="partnerships.html" class="button is-secondary is-small w-button">Get started</a>
+            </div>
+          </nav>
+          <div class="navbar_menu-button w-nav-button">
+            <div class="menu-icon">
+              <div class="menu-icon_line-top"></div>
+              <div class="menu-icon_line-middle">
+                <div class="menu-icon_line-middle-inner"></div>
+              </div>
+              <div class="menu-icon_line-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main-wrapper">
+      <div class="w-layout-blockcontainer w-container"></div>
+      <section class="section_hero">
+        <div data-poster-url="videos/331130_Ar-Glasses-Wind-Turbine-Simulation-Vfx_By_Frame_Stock_Footage_Artlist_HD-poster-00001.jpg" data-video-urls="videos/331130_Ar-Glasses-Wind-Turbine-Simulation-Vfx_By_Frame_Stock_Footage_Artlist_HD-transcode.mp4,videos/331130_Ar-Glasses-Wind-Turbine-Simulation-Vfx_By_Frame_Stock_Footage_Artlist_HD-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video id="da6c9a66-0d28-347d-44a8-3ec80893495a-video" autoplay="" loop="" style="background-image:url(&quot;videos/331130_Ar-Glasses-Wind-Turbine-Simulation-Vfx_By_Frame_Stock_Footage_Artlist_HD-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+            <source src="videos/331130_Ar-Glasses-Wind-Turbine-Simulation-Vfx_By_Frame_Stock_Footage_Artlist_HD-transcode.mp4" data-wf-ignore="true">
+            <source src="videos/331130_Ar-Glasses-Wind-Turbine-Simulation-Vfx_By_Frame_Stock_Footage_Artlist_HD-transcode.webm" data-wf-ignore="true">
+          </video></div>
+        <div class="w-layout-blockcontainer padding-global padding-section-hero w-container">
+          <div title="" data-w-id="9f4cb4fe-02b7-c068-e94c-0516fe342a06" class="hero_wrapper">
+            <div class="w-layout-blockcontainer container w-container">
+              <div class="spline-scene-2" data-w-id="608cbefc-e8dc-a443-1c5f-55d5479486e7" data-animation-type="spline" data-spline-url="https://prod.spline.design/6sSGGcclGh7PvwdX/scene.splinecode"><canvas></canvas></div>
+            </div>
+            <div data-w-id="9f4cb4fe-02b7-c068-e94c-0516fe342a0a" class="hero_column-wrapper">
+              <div class="hero_text">
+                <div class="hero_text-paragraph">
+                  <p class="paragraph-3"><strong class="bold-text">Skills for Tomorrow, Today</strong></p>
+                  <h2 data-w-id="1c1118b1-a972-d2ea-ec7f-be02d8a7ec8c" style="-webkit-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="heading-style-h6">501(C) nonprofit mission statement<br></h2>
+                </div>
+              </div>
+              <p class="paragraph-4">Equipping communities with essential skills to enter and thrive in the rapidly changing workforce.</p>
+              <div class="button-group">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBHjH8MrrP9yXTyMvEsLFMw3l4UXmlc7b4GOOieDBxfVdCdQ/viewform?usp=sf_link" class="button is-icon w-inline-block">
+                  <div class="text-weight-semibold text-size-regular">Partnership Form</div>
+                  <div class="icon-embed-xsmall w-embed">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16">
+                      <defs>
+                        <style>
+      .cls-1 {
+        fill: currentcolor;
+        stroke-width: 0px;
+      }
+    </style>
+                      </defs>
+                      <polygon class="cls-1" points="8.35 15.35 7.65 14.65 14.29 8 7.65 1.35 8.35 .65 15.71 8 8.35 15.35">
+                      <rect class="cls-1" x="1" y="7.5" width="14" height="1"></rect>
+                    </polygon></svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="hero_image-wrapper"><img class="img_hero-mobile" src="images/hero_img_1.webp" alt="UI Elements, time management app." style="-webkit-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" sizes="(max-width: 479px) 99vw, (max-width: 767px) 70vw, 100vw" data-w-id="28515dd6-c5a7-6828-2677-f673bbc5f851" loading="lazy" srcset="images/hero_img_1-p-500.webp 500w, images/hero_img_1-p-800.webp 800w, images/hero_img_1.webp 1000w"><img class="img_hero-1" src="images/AdobeStock_306938250_Preview.jpeg" alt="" style="-webkit-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" sizes="(max-width: 767px) 100vw, (max-width: 991px) 320px, 35vw" data-w-id="d4ef5b87-80d7-9065-c7c1-de7060683e41" loading="lazy" srcset="images/AdobeStock_306938250_Preview-p-500.jpeg 500w, images/AdobeStock_306938250_Preview-p-800.jpeg 800w, images/AdobeStock_306938250_Preview.jpeg 1000w"><img class="img_hero-2" src="images/AdobeStock_692576099_Preview.jpeg" alt="" style="-webkit-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" sizes="(max-width: 767px) 100vw, (max-width: 991px) 260px, 29vw" data-w-id="6a1f61ae-41fc-9307-ac1c-929a58d10fdc" loading="lazy" srcset="images/AdobeStock_692576099_Preview-p-500.jpeg 500w, images/AdobeStock_692576099_Preview-p-800.jpeg 800w, images/AdobeStock_692576099_Preview.jpeg 1000w"><img class="img_hero-4" src="images/AdobeStock_207627811_Preview.jpeg" alt="" style="-webkit-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" sizes="(max-width: 767px) 100vw, (max-width: 991px) 140px, 15vw" data-w-id="f8207805-5dc1-46c4-efc8-7fe00cf56b97" loading="lazy" srcset="images/AdobeStock_207627811_Preview-p-500.jpeg 500w, images/AdobeStock_207627811_Preview-p-800.jpeg 800w, images/AdobeStock_207627811_Preview.jpeg 1000w"><img class="img_hero-3" src="images/AdobeStock_855464454_Preview.jpeg" alt="" style="-webkit-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" sizes="(max-width: 767px) 100vw, (max-width: 991px) 120px, 13vw" data-w-id="2998ce8d-44f3-5162-d8fc-47705e0781b3" loading="lazy" srcset="images/AdobeStock_855464454_Preview-p-500.jpeg 500w, images/AdobeStock_855464454_Preview-p-800.jpeg 800w, images/AdobeStock_855464454_Preview.jpeg 1000w"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section_mainfeatures">
+        <div class="w-layout-blockcontainer padding-global padding-section-medium w-container">
+          <div class="mainfeatures_heading">
+            <div class="section-header text-align-center">
+              <h3 data-w-id="6e8c5aff-4024-b7a9-74cb-f091c55bf2ed" style="-webkit-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">We harness the power of virtual reality and other technologies to develop the workforce and stimulate economic mobility.<br></h3>
+            </div>
+            <div data-w-id="22e4c559-1951-ce22-4496-1deb2b1a2ff5" style="-webkit-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="mainfeatures_component">
+              <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="mainfeatures_tabs w-tabs">
+                <div class="mainfeatures_tabs-menu w-tab-menu">
+                  <a data-w-tab="Tab 1" class="mainfeatures_tabs-link w-inline-block w-tab-link w--current">
+                    <div class="text-size-small">Operation Access Opportunity</div>
+                  </a>
+                  <a data-w-tab="Tab 2" class="mainfeatures_tabs-link w-inline-block w-tab-link">
+                    <div class="text-size-small">CatalysTech Designs</div>
+                  </a>
+                  <a data-w-tab="Tab 3" class="mainfeatures_tabs-link w-inline-block w-tab-link">
+                    <div class="text-size-small">Professional Development &amp; Leadership</div>
+                  </a>
+                </div>
+                <div class="mainfeatures_tabs-content w-tab-content">
+                  <div data-w-tab="Tab 1" class="mainfeatures_tabs-pane w-tab-pane w--tab-active">
+                    <div class="w-layout-grid mainfeatures_pane-content">
+                      <div class="mainfeatures_image-wrapper"><img sizes="(max-width: 479px) 77vw, (max-width: 767px) 82vw, (max-width: 991px) 42vw, 45vw" srcset="images/portrait-engineers-during-work-hours-job-site-p-500.jpeg 500w, images/portrait-engineers-during-work-hours-job-site.jpeg 626w" alt="" src="images/portrait-engineers-during-work-hours-job-site.jpeg" loading="lazy" class="mainfeatures_image"></div>
+                      <div class="mainfeatures_content-wrapper">
+                        <div class="mainfeatures_content">
+                          <h3 class="heading-style-h3">Operation Access Opportunity (OAO)</h3>
+                          <p class="text-size-regular">Designed to serve populations facing systemic employment and career advancement barriers. OAO addresses this issue by leveraging VR and other technologies to provide skill training that aligns with workforce needs. By targeting labor market demands, OAO aims to fill these job openings, thereby stabilizing and strengthening Maine&#x27;s economy while providing economic mobility to populations who face systemic barriers.</p>
+                        </div>
+                        <div class="button-group"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-w-tab="Tab 2" class="mainfeatures_tabs-pane w-tab-pane">
+                    <div class="w-layout-grid mainfeatures_pane-content">
+                      <div class="mainfeatures_image-wrapper">
+                        <div class="spline-scene" data-w-id="d5ccf411-74ce-b536-7c51-6dca0cff20b5" data-animation-type="spline" data-spline-url="https://prod.spline.design/ofmmTMouHXFdC1qt/scene.splinecode"><canvas></canvas></div>
+                      </div>
+                      <div class="mainfeatures_content-wrapper">
+                        <div class="mainfeatures_content">
+                          <h3 class="heading-style-h3">CatalysTech Designs</h3>
+                          <p class="text-size-regular">Designed as a workforce development and economic mobility program, this initiative serves justice-impacted individuals, including those currently incarcerated and those in reentry. The program focuses on essential skill development, mentoring, career pathways, entrepreneurship, and hands-on work experiences in software engineering and UX/UI design, thereby enhancing employability outcomes.</p>
+                        </div>
+                        <div class="button-group"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-w-tab="Tab 3" class="mainfeatures_tabs-pane w-tab-pane">
+                    <div class="w-layout-grid mainfeatures_pane-content">
+                      <div class="mainfeatures_image-wrapper"><img sizes="(max-width: 479px) 77vw, (max-width: 767px) 82vw, (max-width: 991px) 42vw, 45vw" srcset="images/blobs2-p-500.webp 500w, images/blobs2-p-800.webp 800w, images/blobs2-p-1080.webp 1080w, images/blobs2.webp 1500w" alt="Abstract 3D shapes, bubbles in orange and blue." src="images/blobs2.webp" loading="lazy" class="mainfeatures_image"></div>
+                      <div class="mainfeatures_content-wrapper">
+                        <div class="mainfeatures_content">
+                          <h3 class="heading-style-h3">Professional Development &amp; Leadership</h3>
+                          <p>Program coming soon.</p>
+                        </div>
+                        <div class="button-group"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_insights">
+        <div class="w-layout-blockcontainer padding-global padding-section-medium w-container">
+          <div class="insights_wrapper">
+            <div data-w-id="b7cc369f-7df7-2383-00ed-f8ff33075c91" style="-webkit-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="section-header">
+              <h2 data-w-id="8ddccac8-b3bf-be6f-af33-8e6cb9950328" style="-webkit-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="heading-style-h6">Let us help<br></h2>
+              <h3 class="heading-style-h4">Maine workforce by the numbers<br></h3>
+            </div>
+            <div data-w-id="b7cc369f-7df7-2383-00ed-f8ff33075c9e" style="-webkit-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="insights_component">
+              <div class="insights_tile">
+                <div class="icon-rect-medium">
+                  <div class="icon-large w-embed">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+                      <defs>
+                        <style>
+      .cls-1 {
+        fill: currentcolor;
+        stroke-width: 0px;
+      }
+    </style>
+                      </defs>
+                      <path class="cls-1" d="m11.05,11.05c.65-.64,1.39-1.15,2.23-1.5L9.77,1.26c-1.91.81-3.62,1.96-5.08,3.43-1.47,1.47-2.62,3.18-3.43,5.08l8.29,3.51c.35-.83.86-1.58,1.5-2.23Z"></path>
+                      <path class="cls-1" d="m11.05,20.95c-.64-.65-1.15-1.39-1.5-2.22-.36-.86-.55-1.78-.55-2.73H0c0,2.16.42,4.25,1.26,6.23.81,1.91,1.96,3.62,3.43,5.08,1.47,1.47,3.18,2.62,5.08,3.43,1.97.83,4.07,1.26,6.23,1.26v-9c-.95,0-1.86-.18-2.72-.55-.83-.35-1.58-.86-2.23-1.5Z"></path>
+                      <path class="cls-1" d="m30.74,9.77c-.81-1.91-1.96-3.62-3.43-5.08-1.47-1.47-3.18-2.62-5.08-3.43C20.25.42,18.16,0,16,0v9c.95,0,1.86.18,2.72.55.83.35,1.58.86,2.23,1.5.64.65,1.15,1.39,1.5,2.22.36.86.55,1.78.55,2.72s-.18,1.86-.55,2.72c-.35.83-.86,1.58-1.5,2.23-.65.64-1.39,1.15-2.23,1.5l3.51,8.29c1.91-.81,3.62-1.96,5.08-3.43,1.47-1.47,2.62-3.18,3.43-5.09.83-1.98,1.26-4.07,1.26-6.23s-.42-4.25-1.26-6.23Z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="insights_text-wrapper">
+                  <h3 class="heading-style-h1">21%</h3>
+                  <div class="text-size-small">Population over 65, making Maine the oldest population in the nation.<br>‍</div>
+                </div>
+              </div>
+              <div class="insights_tile">
+                <div class="icon-rect-medium">
+                  <div class="icon-large w-embed">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+                      <defs>
+                        <style>
+      .cls-1 {
+        fill: currentcolor;
+        stroke-width: 0px;
+      }
+    </style>
+                      </defs>
+                      <path class="cls-1" d="m16,23c-3.86,0-7-3.14-7-7H0c0,8.82,7.18,16,16,16s16-7.18,16-16h-9c0,3.86-3.14,7-7,7Z"></path>
+                      <path class="cls-1" d="m16,16C24.82,16,32,8.82,32,0h-9c0,3.86-3.14,7-7,7S9,3.86,9,0H0C0,8.82,7.18,16,16,16Z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="insights_text-wrapper">
+                  <h3 class="heading-style-h1">75% </h3>
+                  <div class="text-size-small">Projected job openings in Maine that will require skills developed beyond high school by 2026.</div>
+                </div>
+              </div>
+              <div class="insights_tile">
+                <div class="icon-rect-medium">
+                  <div class="icon-large w-embed">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+                      <defs>
+                        <style>
+      .cls-1 {
+        fill: currentcolor;
+        stroke-width: 0px;
+      }
+    </style>
+                      </defs>
+                      <circle class="cls-1" cx="7.5" cy="7.5" r="7.5"></circle>
+                      <path class="cls-1" d="m24.5,15c4.14,0,7.5-3.36,7.5-7.5S28.64,0,24.5,0s-7.5,3.36-7.5,7.5,3.36,7.5,7.5,7.5Zm0-10c1.38,0,2.5,1.12,2.5,2.5s-1.12,2.5-2.5,2.5-2.5-1.12-2.5-2.5,1.12-2.5,2.5-2.5Z"></path>
+                      <path class="cls-1" d="m7.5,17c-4.14,0-7.5,3.36-7.5,7.5s3.36,7.5,7.5,7.5,7.5-3.36,7.5-7.5-3.36-7.5-7.5-7.5Zm0,10c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5,2.5,1.12,2.5,2.5-1.12,2.5-2.5,2.5Z"></path>
+                      <circle class="cls-1" cx="24.5" cy="24.5" r="7.5"></circle>
+                    </svg>
+                  </div>
+                </div>
+                <div class="insights_text-wrapper">
+                  <h3 class="heading-style-h1">75,100</h3>
+                  <div class="text-size-small">Number of job openings projected <em>each</em> <em>year</em> through 2028.<br>‍</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_features">
+        <div class="w-layout-blockcontainer padding-global padding-section-large w-container">
+          <div class="features_wrapper">
+            <div data-w-id="790e15ee-faa4-e6ce-afdb-fa0063b2475d" style="-webkit-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="utility_header">
+              <h2 data-w-id="790e15ee-faa4-e6ce-afdb-fa0063b2475e" style="-webkit-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="heading-style-h6">this is how it works<br></h2>
+              <h2 class="heading-style-h3">Partnering with like-minded organizations to build a sustainable workforce for tomorrow.</h2>
+            </div>
+            <div class="w-layout-grid features_component">
+              <div data-w-id="c5516d98-0025-c9f2-6277-654d92780f1d" style="-webkit-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="features_top">
+                <div class="features_image-wrapper"><img src="images/PartnerImage.png" loading="lazy" alt="" class="features_image"></div>
+                <div id="w-node-a9ba5952-76d7-bbf4-1198-efd90cc6c95c-7576bf86" class="features_content">
+                  <h3 class="heading-style-h4">Different ways we partner</h3>
+                  <p class="text-weight-normal text-size-regular">We offer a variety of partnership opportunities to support our mission of workforce development and economic mobility. <br><br>1) Our <strong>Contract Partnership</strong> allows us to provide high-quality software development services through our CatalysTech Designs program. <br><br>2) The <strong>Education &amp; Training Partnership</strong> focuses on leveraging learning materials and resources to deliver hands-on training in fields like software engineering and UX/UI design. <br><br>3) Through our <strong>Employment Partnership</strong>, we connect qualified individuals trained by InVeXodus® with employers seeking skilled professionals. <br><br>4) Lastly, our <strong>Mutual Interest Partnership</strong> enables us to collaborate with organizations that share our commitment to education and career development. <br><br>Have another idea for partnering with us? We’re always open to exploring new opportunities to further our mission.<br></p>
+                </div>
+              </div>
+            </div>
+            <div class="button-group align-center">
+              <a href="partnerships.html" class="button is-secondary w-button">PARTNER WITH US</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="w-layout-blockcontainer padding-global padding-section-large w-container">
+          <div class="faq_wrapper">
+            <div class="faq_header">
+              <h3>Frequently Asked Questions</h3>
+            </div>
+            <div class="faq_component">
+              <div data-w-id="cfa46428-026c-2b1e-26b1-fc82afe86913" style="-webkit-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="w-layout-grid faq_list">
+                <div class="faq_accordion">
+                  <div data-w-id="cfa46428-026c-2b1e-26b1-fc82afe86939" class="faq_question">
+                    <div class="text-weight-semibold text-size-medium">What is InVeXodus?</div>
+                    <div class="faq_icon">
+                      <div class="icon-1x1-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewbox="0 0 8 8">
+                          <path d="M4 0L4 8" classname="cls-1" stroke="currentcolor" stroke-width="0.8px"></path>
+                          <path d="M8 4L0 4" classname="cls-1" stroke="currentcolor" stroke-width="0.8px"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div style="width:100%;height:0px" class="faq_answer">
+                    <div class="faq_answer-wrapper">
+                      <p class="text-size-regular">InVeXodus is an innovative workforce development and economic mobility nonprofit that leverages technology to create employment opportunities for individuals facing employment barriers.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq_accordion">
+                  <div data-w-id="d56fc1aa-2c43-9d69-7937-adcadde3481d" class="faq_question">
+                    <div class="text-weight-semibold text-size-medium">What are the main programs offered by InVeXodus?</div>
+                    <div class="faq_icon">
+                      <div class="icon-1x1-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewbox="0 0 8 8">
+                          <path d="M4 0L4 8" classname="cls-1" stroke="currentcolor" stroke-width="0.8px"></path>
+                          <path d="M8 4L0 4" classname="cls-1" stroke="currentcolor" stroke-width="0.8px"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div style="width:100%;height:0px" class="faq_answer">
+                    <div class="faq_answer-wrapper">
+                      <p class="text-size-regular">InVeXodus offers two main programs: Operation Access Opportunity (OAO) and CatalysTech Designs. Both programs focus on equipping participants with essential skills for modern careers through advanced technologies and hands-on training.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq_accordion">
+                  <div data-w-id="7327a917-cb09-3c19-9626-040273db18ba" class="faq_question">
+                    <div class="text-weight-semibold text-size-medium">What is Operation Access Opportunity (OAO)?</div>
+                    <div class="faq_icon">
+                      <div class="icon-1x1-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewbox="0 0 8 8">
+                          <path d="M4 0L4 8" classname="cls-1" stroke="currentcolor" stroke-width="0.8px"></path>
+                          <path d="M8 4L0 4" classname="cls-1" stroke="currentcolor" stroke-width="0.8px"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div style="width:100%;height:0px" class="faq_answer">
+                    <div class="faq_answer-wrapper">
+                      <p class="text-size-regular">OAO is a program designed to help individuals facing employment barriers, such as those with criminal records, low-income youth, veterans, and persons with substance use disorders. It leverages virtual reality (VR) and other innovative technologies to provide skill development for in-demand careers.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq_accordion">
+                  <div data-w-id="922e21d1-9ddb-c081-b4e4-0f49dad8d021" class="faq_question">
+                    <div class="text-weight-semibold text-size-medium">How does OAO address Maine&#x27;s workforce gap?</div>
+                    <div class="faq_icon">
+                      <div class="icon-1x1-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewbox="0 0 8 8">
+                          <path d="M4 0L4 8" classname="cls-1" stroke="currentcolor" stroke-width="0.8px"></path>
+                          <path d="M8 4L0 4" classname="cls-1" stroke="currentcolor" stroke-width="0.8px"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div style="width:100%;height:0px" class="faq_answer">
+                    <div class="faq_answer-wrapper">
+                      <p class="text-size-regular">OAO addresses Maine&#x27;s workforce gap by providing skill development for in-demand careers, particularly in response to the state&#x27;s aging population. The program aims to fill job openings and stabilize the economy by offering opportunities to underserved communities.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq_accordion">
+                  <div data-w-id="fdca0117-2693-b8ca-bbf3-11605fb2d5c9" class="faq_question">
+                    <div class="text-weight-semibold text-size-medium">What is CatalysTech Designs?</div>
+                    <div class="faq_icon">
+                      <div class="icon-1x1-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewbox="0 0 8 8">
+                          <path d="M4 0L4 8" classname="cls-1" stroke="currentcolor" stroke-width="0.8px"></path>
+                          <path d="M8 4L0 4" classname="cls-1" stroke="currentcolor" stroke-width="0.8px"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div style="width:100%;height:0px" class="faq_answer">
+                    <div class="faq_answer-wrapper">
+                      <p class="text-size-regular">CatalysTech Designs is a workforce development program focused on justice-impacted individuals, including those currently incarcerated and those reentering society. It offers essential skill development in software engineering and UI/UX design. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq_accordion">
+                  <div data-w-id="4c543f9e-dd7e-81dc-a085-910972937bce" class="faq_question">
+                    <div class="text-weight-semibold text-size-medium">How does CatalysTech Designs help justice-impacted individuals?</div>
+                    <div class="faq_icon">
+                      <div class="icon-1x1-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewbox="0 0 8 8">
+                          <path d="M4 0L4 8" classname="cls-1" stroke="currentcolor" stroke-width="0.8px"></path>
+                          <path d="M8 4L0 4" classname="cls-1" stroke="currentcolor" stroke-width="0.8px"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div style="width:100%;height:0px" class="faq_answer">
+                    <div class="faq_answer-wrapper">
+                      <p class="text-size-regular">CatalysTech Designs helps justice-impacted individuals by providing them with the tools needed for economic stability, including mentoring, career pathways, and hands-on work experiences. The program addresses high unemployment rates and economic challenges faced by individuals who are formerly incarcerated.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq_accordion">
+                  <div data-w-id="9bebd117-94b3-6dd5-d1cd-a03c3acaca30" class="faq_question">
+                    <div class="text-weight-semibold text-size-medium">What types of partnerships does InVeXodus offer?</div>
+                    <div class="faq_icon">
+                      <div class="icon-1x1-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewbox="0 0 8 8">
+                          <path d="M4 0L4 8" classname="cls-1" stroke="currentcolor" stroke-width="0.8px"></path>
+                          <path d="M8 4L0 4" classname="cls-1" stroke="currentcolor" stroke-width="0.8px"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div style="width:100%;height:0px" class="faq_answer">
+                    <div class="faq_answer-wrapper">
+                      <p class="text-size-regular">InVeXodus offers four types of partnerships:</p>
+                      <ul role="list">
+                        <li>Mutual Interest Partnerships - Organizations that share similar initiatives.</li>
+                        <li>Employment Partnerships - Companies that recruit individuals trained from our programs for employment.</li>
+                        <li>Contract Partnerships - Organizations that contract our services to develop products.</li>
+                        <li>Education Partnerships - Institutions offering credentialed curriculum for our programs.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq_cta">
+              <div class="section-header text-align-center">
+                <h3>Still have a question?</h3>
+                <p class="text-size-medium">Please reach out to us.</p>
+              </div>
+              <div class="button-group align-center">
+                <a href="contact-us.html" class="button w-button">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="section_footer">
+      <div class="w-layout-blockcontainer padding-global padding-section-medium w-container">
+        <div class="w-layout-grid footer_top-wrapper">
+          <div class="footer_left-wrapper">
+            <a href="index.html" aria-current="page" class="footer_logo-link w-nav-brand w--current"><img src="images/Screenshot-240.png" loading="lazy" alt="" class="footer_logo-image"></a>
+            <div class="text-weight-normal text-size-regular">Join our initiatives to create employment opportunities for everyone.</div>
+            <div class="footer_form-block w-form">
+              <form id="wf-form-Newsletter-form" name="wf-form-Newsletter-form" data-name="Newsletter form" method="get" class="footer_form" data-wf-page-id="66be277dc89ae0bb7576bf86" data-wf-element-id="78e5b33e-d8ed-b7d7-331b-f69cc7d9511d"><input class="footer_form-input w-input" maxlength="256" name="Email" data-name="Email" placeholder="Enter your email" type="email" id="Email-3" required="">
+                <a href="contact-us.html" class="button w-button">Join now</a>
+              </form>
+              <div class="text-size-tiny">For more information about partnering, send us an email or fill out a form on our partnership page.</div>
+              <div class="success-message w-form-done">
+                <div>Thank you! Your submission has been received!</div>
+              </div>
+              <div class="error-message w-form-fail">
+                <div>Oops! Something went wrong while submitting the form.</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-layout-grid footer_menu-wrapper">
+            <div class="footer_link-list">
+              <div class="margin-bottom margin-xsmall">
+                <div class="text-weight-semibold">Product</div>
+              </div>
+              <a href="index.html" aria-current="page" class="footer_link w--current">Home</a>
+              <a href="about.html" class="footer_link">About</a>
+              <a href="programs.html" class="footer_link">Programs</a>
+              <a href="partnerships.html" class="footer_link">Partnerships</a>
+              <a href="contact-us.html" class="footer_link">Contact US</a>
+            </div>
+            <div class="footer_link-list">
+              <div class="margin-bottom margin-xsmall">
+                <div class="text-weight-semibold">Follow Us</div>
+              </div>
+              <a href="https://www.linkedin.com/" target="_blank" class="footer_social-link w-inline-block">
+                <div>LinkedIn</div>
+              </a>
+              <a href="https://www.facebook.com/" target="_blank" class="footer_social-link w-inline-block">
+                <div class="text-block">Facebook</div>
+              </a>
+              <a href="https://www.instagram.com/" class="footer_social-link w-inline-block">
+                <div>Instagram</div>
+              </a>
+              <a href="https://twitter.com" target="_blank" class="footer_social-link w-inline-block">
+                <div>Twitter</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="line-divider background-color-white"></div>
+        <div class="footer_bottom-wrapper">
+          <div class="footer_credit-text"></div>
+          <div class="w-layout-grid footer_legal-list">
+            <a href="index.html" aria-current="page" class="footer_legal-link w--current">Privacy Policy</a>
+            <a href="index.html" aria-current="page" class="footer_legal-link w--current">Terms of Service</a>
+            <a href="index.html" aria-current="page" class="footer_legal-link w--current">Cookies Settings</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=66be277cc89ae0bb7576be9e" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+</body>
+</html>
